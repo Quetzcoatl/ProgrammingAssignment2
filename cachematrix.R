@@ -1,7 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## This creates a list of  functions to get/set the matirix
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -18,6 +15,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getinvMat = getinvMat)
 }
 
+##This function checks for a chached Matric and if it is not cached calculates
+## the inverrse and displays it
 cacheSolve <- function(x, ...) {
   i <- x$getinvMat()
   if (!is.null(i)) {
